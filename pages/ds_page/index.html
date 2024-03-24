@@ -3,110 +3,214 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Title of this subpage-->>
-    <title>XXX Island|Data Science</title>
+    <!-- Title of this subpage-->
+    <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="ds_index.css" />
     <script src="index.js"></script>
 </head>
     <body>
-        <!-- Content on the left, 4 MAXIMUM-->
-        <div class="left_container">
-            <div class="btn prof" onclick="showContent('professional')">
-                <!-- Edit your own categories here-->
-                <h3>Professional</h3>
+        <div class="vertical_container">
+            <div class="left_container1">
+                <!-- Return to the main page -->
+                <div class="return">
+                    <div class="btn ds_to_home">
+                        <a href="../../index.html">
+                            <h3>返回 / Back</h3>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <!-- Content on the left, 4 MAXIMUM-->
+            <div class="left_container">
+                <div class="btn prof" onclick="handleButtonClick('professional')">
+                    <h3>个人简历<br>&nbsp&nbsp&nbsp Resume &nbsp&nbsp&nbsp</h3>
+                </div>
+                <div class="btn research" onclick="handleButtonClick('research')">
+                    <h3>本科经历 Undergraduate</h3>
+                </div>
+                <div class="btn inschool" onclick="handleButtonClick('inschool')">
+                    <h3>硕士经历 Postgraduate</h3>
+                </div>
+                <div class="btn kaggle" onclick="handleButtonClick('kaggle')">
+                    <h3>工作经历 Professional</h3>
+                </div>                
             </div>
-            <div class="btn research" onclick="showContent('research')">
-                <h3>Research</h3>
-            </div>
-            <div class="btn inschool" onclick="showContent('inschool')">
-                <h3>In-School</h3>
-            </div>
-            <div class="btn kaggle" onclick="showContent('kaggle')">
-                <h3>Kaggle</h3>
-            </div>
-            
         </div>
+        
         <div class="right_container">
             <!-- Detailed information of the first category -->
             <div class="right_present_professional content">
                 <div class="card">
-                    <h1>XXX company - XXX Assistant</h1>
-                    <h2>Beijing July 202X - December 202X</h2>
-                    <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                    </p>
+                    <h1>教育背景</h1>
+                    <h2>教育经历</h2>
+                    <p>2014.09‑2018.07&nbsp;&nbsp;&nbsp;&nbsp;同济大学 | 土木工程学院 | 建筑工程系 | 土木工程专业 | 工学学士</p>
+                    <p>2023.09‑2024.09&nbsp;&nbsp;&nbsp;&nbsp;伦敦大学学院 | 巴特莱特学院 | 高级空间分析中心 | 城市空间科学专业 | 理学硕士</p>
+                    <h2>获奖经历</h2>
+                    <p>2014.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同济大学2014年新生结构赛 | 第一名 | 团队项目 | 负责计算，参与模型制作</p>
+                    <p>2015.06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第16届大学生结构竞赛 | 三等奖 | 团队项目 | 参与计算和模型制作</p>
+                    <p>2015.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同济大学2015年国际建造节 | 土木工程学院代表队 | 团队项目 | 参与造型设计和构筑物搭建</p>
+                    <p>2015.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同济大学优秀学生奖学金 | 三等奖</p>
+                    <h2>科研经历</h2>
+                    <p>2016.05-2017.05&nbsp;&nbsp;&nbsp;&nbsp;大学生创新项目“校园内道路减速带系统对自行车交通影响的分析” | MATLAB数据分析建模</p>
+                    <p>2017.05-2018.04&nbsp;&nbsp;&nbsp;&nbsp;导师制项目“面向美丽乡村建设的标准化轻钢住宅体系开发设计” | 背景调研，文献综述</p>
+                    <p>2023.12-2024.01&nbsp;&nbsp;&nbsp;&nbsp;“空间数据科学基础”课程团队课题“伦敦InsideAirbnb数据分析” | python可视化，报告撰写</p>
+                    <p>2024.01-2024.01&nbsp;&nbsp;&nbsp;&nbsp;“定量方法”课程个人定量研究报告“探究中国地级市GDP与连锁店数量的关系” | 回归与残差分析，可视化</p>
+                    <p>2024.03-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“空间系统数据科学”课程个人数据分析报告 | （进行中）</p>
+                    <p>2024.03-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“空间大数据应用开发”课程团队项目 | （进行中）</p>
+                    <p>2024.03-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“毕业论文” | （RP阶段）</p>
+                    <h2>组织经历</h2>
+                    <p>2015.04-2016.10&nbsp;&nbsp;&nbsp;&nbsp;同济大学学生会 权益保障与生活福利部 | 2015年优秀干事 | 负责微信平台运营，参与校园活动策划</p>
                 </div>
                 <hr /> <!-- Horizontal line separator -->
                 <div class="card">
-                    <h1>XXX company - XXX Assistant</h1>
-                    <h2>Beijing July 202X - December 202X</h2>
-                    <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                    </p>
+                    <h1>职业背景</h1>
+                    <h2>工作经历</h2>
+                    <p>2019.04‑2022.11&nbsp;&nbsp;&nbsp;&nbsp;水石设计(上海) | 助理设计师(2019) - 设计师 (2020) - 助理项目负责人 (2021)</p>
+                    <h2>产品研发项目</h2>
+                    <p>2022.03‑2022.09&nbsp;&nbsp;&nbsp;&nbsp;“绿城中国社区大堂标准化体系研发” | 前期研究 | 体系搭建 | 文本撰写 | 案例设计</p>
+                    <h2>建筑设计项目</h2>
+                    <p>2019.07‑2022.08&nbsp;&nbsp;&nbsp;&nbsp;“阜阳双清湾城市综合体” | 安徽，阜阳 | 扩初设计 | 施工配合</p>
+                    <p>2020.03‑2020.07&nbsp;&nbsp;&nbsp;&nbsp;“凤凰湾邻里中心” | 山东，日照 | 前期研究 | 概念设计 | 平面设计 | 效果表达</p>
+                    <p>2020.12‑2022.11&nbsp;&nbsp;&nbsp;&nbsp;“希尔顿青城山酒店” | 四川，成都 | 前期研究 | 概念设计 | 平面设计 | 效果表达 | 文本撰写</p>
+                    <h2>城市设计项目</h2>
+                    <p>2019.05‑2019.08&nbsp;&nbsp;&nbsp;&nbsp;“泗泾古镇再生项目” | 上海，松江 | 前期研究 | 场地调研 | 要素提炼 | 概念设计 | 效果表达</p>
+                    <p>2022.05‑2022.11&nbsp;&nbsp;&nbsp;&nbsp;“无锡中心城区地块更新项目” | 江苏，无锡 | 前期研究 | 概念设计 | 平面设计 | 文本撰写</p>
+                    <h2>区域规划项目</h2>
+                    <p>2019.08‑2020.06&nbsp;&nbsp;&nbsp;&nbsp;“马陵水库区域规划项目” | 山东，日照 | 前期研究 | 效果表达</p>
+                    <p>2020.09‑2020.12&nbsp;&nbsp;&nbsp;&nbsp;“怀远县城市规划项目” | 安徽，蚌埠 | 前期研究 | 数据分析 | 规划设计 | 效果表达 | 文本撰写</p>
                 </div>
                 <hr /> <!-- Horizontal line separator -->
                 <div class="card">
-                    <h1>XXX company - XXX Assistant</h1>
-                    <h2>Beijing July 202X - December 202X</h2>
-                    <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                    </p>
+                    <h1>专业技能</h1>
+                    <h2>软件与编程语言</h2>
+                    <p>熟练&nbsp;&nbsp;&nbsp;&nbsp;AutoCAD | Sketchup | Photoshop | Indesign | Enscape | Python | R | Netlogo</p>
+                    <p>了解&nbsp;&nbsp;&nbsp;&nbsp;Illustrator | QGIS | SQL | Rhinoceros | Lumion | Matlab | ArcGIS | Premiere Pro | GEE | Figma</p>
+                    <h2>语言能力</h2>
+                    <p>中文(普通话二级甲等)</p>
+                    <p>英文(IELTS 7.0)</p>
                 </div>
             </div>
 
             <!-- Detailed information of the second category -->
             <div class="right_present_research content">
                 <div class="card">
-                    <h1>XXX company - XXX Assistant</h1>
-                    <h2>Beijing July 202X - December 202X</h2>
-                    <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                    </p>
+                    <h1>本科概览</h1>
+                    <h2>基础信息</h2>
+                    <p>同济大学-土木工程学院-建筑工程系-土木工程专业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业成绩：85.35/100 | 4.04/5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毕业设计成绩：优</p>
+                    <h2>核心课程</h2>
+                    <p>数学类：高等数学，线性代数，概率论与数理统计，数学建模，数值计算</p>
+                    <p>编程类：大学计算机，C++语言，软件开发技术基础</p>
+                    <p>力学类：理论力学，材料力学，结构力学，结构动力学，流体力学，弹性力学，土力学，薄壁杆件力学</p>
+                    <p>专业课：混凝土原理与结构设计，钢结构原理与结构设计，基础工程设计原理，木结构，高层建筑结构，抗震设计</p>
                 </div>
                 <hr />
+                <div style="height: 20px;"></div> <!-- This creates a space of 20px height -->
+                <div class="card">
+                    <h1>重点经历</h1>
+                    <h2>竞赛相关</h2>
+                    <p>这里是本科期间重要竞赛的相关记录，区别于课程成绩体现的理论知识素养，更多体现实践能力和团队合作能力。</p>
+                    <img src="../../dict/images/1.png" alt="Process of Stacking">
+                    <h2>科研相关</h2>
+                    <p>（相关资料待更新）</p>
+                    <h2>两个课设</h2>
+                    <p>（相关资料待更新）</p>
+                    <p> </p>
+                </div>   
             </div>
 
             <!-- Detailed information of the third category -->
             <div class="right_present_inschool content">
                 <div class="card">
-                    <h1>XXX company - XXX Assistant</h1>
-                    <h2>Beijing July 202X - December 202X</h2>
-                    <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                    </p>
+                    <h1>硕士概览</h1>
+                    <h2>基础信息</h2>
+                    <p>伦敦大学学院(UCL)-巴特莱特学院(The Bartlett)-高级空间分析中心(CASA)-城市空间科学专业(Urban Spatial Science)</p>
+                    <p>专业成绩：（待后续补充）</p>
+                    <h2>专业课程</h2>
+                    <p>CASA0001: Urban Systems Theory | 城市系统理论 | 城市化、系统和复杂性理论、城市形式和功能、流动性</p>
+                    <p>CASA0002: Urban Simulation | 城市仿真建模 | 空间交互模型与网络科学</p>
+                    <p>CASA0005: Geographic Information Systems and Science | 地理信息系统和科学 | QGIS与R语言</p>
+                    <p>CASA0006: Data Science for Spatial Systems | 空间系统数据科学 | 机器学习与因果推断</p>
+                    <p>CASA0007: Quantitative Methods | 定量方法 | 线性回归、假设检验、聚类、线性规划、空间优化、统计谬误、系统动力学</p>
+                    <p>CASA0011: Agent Based Modelling for Spatial Systems | 基于代理的空间系统建模 | ABM的概念与Netlogo语言</p>
+                    <p>CASA0013: Foundations of Spatial Data Science | 空间数据科学基础 | Python语言</p>
+                    <p>CASA0025: Building Spatial Applications with Big Data | 空间大数据应用开发 | GEE与SQL</p>
+                    <p>CASA0010: Urban Spatial Science Dissertation | 毕业论文</p>
                 </div>
                 <hr />
+                <div style="height: 20px;"></div> <!-- This creates a space of 20px height -->
+                <div class="card">
+                    <h1>重点项目</h1>
+                    <h2>伦敦InsideAirbnb数据分析</h2>
+                    <p>（待后续补充）</p>
+                    <h2>探究中国地级市GDP与连锁店数量的关系</h2>
+                    <p>（待后续补充）</p>
+                </div>
             </div>
 
             <!-- Detailed information of the third category -->
             <div class="right_present_kaggle content">
                 <div class="card">
                     <div class="card">
-                        <h1>XXX company - XXX Assistant</h1>
-                        <h2>Beijing July 202X - December 202X</h2>
-                        <p>As a capybara, I can eat, sleep, and play. I can also do some coding, but not much.
-                        </p>
+                        <h1>工作概览</h1>
+                        <h2>基础信息</h2>
+                        <p>水石设计(上海) | 助理设计师(2019) - 设计师 (2020) - 助理项目负责人 (2021)</p>
+                        <h2>项目经历</h2>
+                        <p>产品研发项目：</p>
+                        <p>建筑设计项目：</p>
+                        <p>城市更新项目：</p>
+                        <p>区域规划项目：</p>
+                    </div>
+                    <hr />
+                    <div style="height: 20px;"></div> <!-- This creates a space of 20px height -->
+                    <div class="card">
+                        <h1>作品集</h1>
+                        <h2>作品1</h2>
+                        <p>（待后续补充）</p>
                     </div>
                     
                     <!-- Insert Image here. Remove it if not needed -->
-                    <div class="stacking_img">
-                        <img src="../../dict/images/capybara.jpg" alt="Process of Stacking">
-                        <p> I am a capybara</p>
-                    </div>
-
-                </div>
-                <hr />
-            </div>
-            
-            <!-- Return to the main page -->
-            <div class="return">
-                <div class="btn ds_to_home">
-                    <a href="../../index.html">
-                        <h2>Return</h2>
-                    </a>
+                    <!--div class="stacking_img">
+                        <img src="../../dict/images/3.jpg" alt="Process of Stacking">
+                        <p> </p>
+                    </div-->
                 </div>
             </div>
         </div>
 
-        <script>
+        <script>            
             // Initialize with 'Professional' content displayed
             showContent('professional');
+
+            // 函数用于根据点击的按钮更改背景图像
+            function changeBackgroundImage(backgroundImage) {
+                document.body.style.backgroundImage = `url('${backgroundImage}')`;
+            }
+
+            function handleButtonClick(category) {
+                // 根据类别更改内容显示
+                showContent(category);
+    
+                // 定义不同类别对应的背景图像URL
+                var backgroundImageUrl = '';
+                switch(category) {
+                    case 'professional':
+                        backgroundImageUrl = '../../dict/images/ds_cover.jpg';
+                        break;
+                    case 'research':
+                        backgroundImageUrl = '../../dict/images/ds_cover2.jpg';
+                        break;
+                    case 'inschool':
+                       backgroundImageUrl = '../../dict/images/ds_cover3.jpg';
+                       break;
+                      case 'kaggle':
+                      backgroundImageUrl = '../../dict/images/ds_cover4.jpg';
+                     break;
+                }
+    
+                // 更改背景图像
+                changeBackgroundImage(backgroundImageUrl);
+            }
         </script>
     </body>
 </html>
