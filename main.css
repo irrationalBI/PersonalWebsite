@@ -141,31 +141,25 @@ body{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-  .text-intro, .container {
+
+
+@media (max-width: 767px) {
+  body {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .text-intro {
-    margin: 20px;
+    margin: 50px;
   }
 
-  .text-intro .intro h1, .text-intro .intro h2, .text-intro .author h3, .text-intro .author p {
-    text-align: center;
+  .container {
+    justify-content: flex-start;
+    margin-top: 0;
   }
 
   .container .card {
-    width: 90%; /* 让卡片在小屏幕上宽度自适应，但留出一些边距 */
-    margin: 20px; /* 减少卡片间的间距 */
-    height: auto; /* 让高度根据内容自动调整 */
-  }
-
-  .container .card .content h3, .container .card .content h2 {
-    font-size: 20px; /* 减小字体大小以适应小屏幕 */
-  }
-
-  .container .card .content p {
-    font-size: 12px; /* 减小段落字体大小 */
+    width: calc(100% - 60px);
+    margin: 15px 30px;
   }
 }

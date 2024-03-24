@@ -196,11 +196,11 @@ a:visited{
     }
 
     .left_container h3 {
-        font-size: 12px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
+        font-size: 10px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
     }
     
     .btn h3 {
-        width: 70px; /* 根据实际需要调整宽度 */
+        width: 25vw; /* 根据实际需要调整宽度 */
         text-align: center;
         margin: 0 auto;
     }
