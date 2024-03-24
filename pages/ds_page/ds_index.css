@@ -182,3 +182,62 @@ a:link {
 a:visited{
     color: #fff;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .left_container {
+        width: 100%;
+        flex-direction: row; /* 子元素水平堆叠 */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .left_container h3 {
+        font-size: 12px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
+    }
+    
+    .btn h3 {
+        width: 80px; /* 根据实际需要调整宽度 */
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+
+    .left_container1 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .left_container1 h3 {
+        font-size: 12px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
+    }
+    
+    .right_container {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 50px 0;
+    }
+    
+    .right_present_professional,
+    .right_present_research,
+    .right_present_inschool,
+    .right_present_kaggle {
+        position: static;
+        padding: 20px;
+        max-height: none;
+        overflow-y: visible;
+    }
+    
+    .stacking_img {
+        text-align: center;
+    }
+    
+    .stacking_img img {
+        width: 100%;
+        height: auto;
+    }
+}
