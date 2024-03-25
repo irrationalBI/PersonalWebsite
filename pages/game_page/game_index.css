@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body{
     min-height: 100vh;
@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
     /* flex-direction: column; */
     font-family: 'Consolas', 'Monaco', 'Microsoft YaHei', monospace;
-  }
+}
 
 .vertical_container {
     display: flex;
@@ -88,7 +88,7 @@ h3 {
 .right_container{
     position: relative;
     width: 70%;
-    height: 600px;
+    height: 640px;
     background-color: rgba(51, 51, 51, 0.9);
     display: flex;
     flex-direction: column;
@@ -97,6 +97,7 @@ h3 {
     padding: 20px;
     margin: 20px 20px 50px 20px;
 }
+
 
 .right_present_professional,
 .right_present_research,
@@ -183,6 +184,10 @@ a:visited{
     color: #fff;
 }
 
+.mobile-break {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     body {
         flex-direction: column;
@@ -200,11 +205,10 @@ a:visited{
     }
     
     .btn h3 {
-        width: 12vw; /* 根据实际需要调整宽度 */
+        width: 15vw; /* 根据实际需要调整宽度 */
         text-align: center;
         margin: 0 auto;
     }
-    
 
     .left_container1 {
         width: 100vw;
@@ -219,6 +223,18 @@ a:visited{
         width: 100vw;
         height: auto;
         margin: 20px 0 50px 0;
+    }
+
+    .right_container h1 {
+        font-size: 24px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
+    }
+
+    .right_container h2 {
+        font-size: 16px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
+    }
+
+    .right_container p {
+        font-size: 12px; /* 示例：在屏幕宽度小于768px时减小字体大小 */
     }
     
     .right_present_professional,
@@ -239,6 +255,11 @@ a:visited{
         width: 100%;
         height: auto;
     }
+
+    .mobile-break {
+        display: block; /* 或使用'inline-block'，视需要而定 */
+        content: ""; /* 对于:before或:after伪元素 */
+        height: 0; /* 防止创建额外空间 */
+        visibility: hidden; /* 使其不可见 */
+    }
 }
-
-

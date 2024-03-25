@@ -9,92 +9,152 @@
     <link rel="stylesheet" type="text/css" media="screen" href="game_index.css" />
     <script src="index.js"></script>
 </head>
-<body>
-    <div class="vertical_container">
-        <div class="left_container1">
-            <!-- Return to the main page -->
-            <div class="return">
-                <div class="btn ds_to_home">
-                    <a href="../../index.html">
-                        <h3>返回 / Back</h3>
-                    </a>
+    <body>
+        <div class="vertical_container">
+            <div class="left_container1">
+                <!-- Return to the main page -->
+                <div class="return">
+                    <div class="btn ds_to_home">
+                        <a href="../../index.html">
+                            <h3>返回 / Back</h3>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <!-- Content on the left, 4 MAXIMUM-->
+            <div class="left_container">
+                <div class="btn professional" onclick="handleButtonClick('professional')">
+                    <h3>学习笔记<br>Learning</h3>
+                </div>
+                <div class="btn research" onclick="handleButtonClick('research')">
+                    <h3>工作思考<br>Work</h3>
+                </div>
+                <div class="btn inschool" onclick="handleButtonClick('inschool')">
+                    <h3>城市旅行<br>Cities</h3>
+                </div>
+                <div class="btn kaggle" onclick="handleButtonClick('kaggle')">
+                    <h3>建筑摄影<br>Architecture</h3>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="right_container">
+            <!-- Detailed information of the first category -->
+            <div class="right_present_professional content">
+                <div class="card">
+                    <h1>数学</h1>
+
+                    <hr />
+                    <h2>◼ 张量的不求甚解</h2>
+                    <p>张量在计算机，理工科和数学专业中的内涵和应用方式各不相同，
+                        数学上的张量十分复杂且难以理解，这里记录了我尝试用“意会”的方式初步理解张量的一些思考。
+                        在应用端，很多时候确实不需要懂得每一个细节和原理。当初步“接纳”了某个概念后，
+                        在后续的使用中，或许就会慢慢懂得背后的知识。
+                        这里重点是区分维度和阶数，Sketchup在这方面竟然意外好用。</p>
+                    <div style="height: 20px;"></div> 
+                    <!-- Insert Image here. Remove it if not needed -->
+                    <div class="stacking_img">
+                        <img src="../../dict/images/note/zl1.jpg" alt="Process of Stacking">
+                        <p> </p>
+                    </div>
+                    <div style="height: 20px;"></div> 
+
+                    <hr />
+                    <h2>◼ 如何从Q-Q plot反推分布图</h2>
+                    <p>（施工中）</p>
+                    <p>（后续可能会重做功能，增加单篇文章的链接）</p>
+                    <div style="height: 20px;"></div> 
                 </div>
             </div>
-        </div> 
-        <!-- Content on the left, 4 MAXIMUM-->
-        <div class="left_container">
-            <div class="btn prof" onclick="handleButtonClick('professional')">
-                <h3>学习笔记<br>Learning</h3>
+
+            <!-- Detailed information of the second category -->
+            <div class="right_present_research content">
             </div>
-            <div class="btn research" onclick="handleButtonClick('research')">
-                <h3>工作思考<br>Work</h3>
+
+            <!-- Detailed information of the third category -->
+            <div class="right_present_inschool content">
             </div>
-            <div class="btn inschool" onclick="handleButtonClick('inschool')">
-                <h3>城市旅行<br>Cities</h3>
+
+            <!-- Detailed information of the third category -->
+            <div class="right_present_kaggle content">
+                <div class="card">
+
+                    <p style="text-align: center;">本网站存档照片与底图都源于日常摄影</p>
+                    <p style="text-align: center;">图片排版功能仍在设计中，下方图片为测试用</p>
+
+                    <div style="height: 30px;"></div> 
+                    <img src="../../dict/images/note/ap/ap1.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>北京大兴国际机场</p>
+                    <p><span style="font-size: 10px;">Beijing Daxing International Airport</span></p>
+                    
+                    <div style="height: 30px;"></div>
+                    <img src="../../dict/images/note/ap/ap2.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>哈尔滨大剧院</p>
+                    <p><span style="font-size: 10px;">Harbin Grand Theatre</span></p>
+
+                    <div style="height: 30px;"></div> 
+                    <img src="../../dict/images/note/ap/ap3.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>上海天文馆</p>
+                    <p><span style="font-size: 10px;">Shanghai Astronomy Museum</span></p>
+
+                    <div style="height: 30px;"></div> 
+                    <img src="../../dict/images/note/ap/ap4.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>纪念碑大厦，伦敦</p>
+                    <p><span style="font-size: 10px;">The Monument Building</span></p>
+
+                    <div style="height: 30px;"></div> 
+                    <img src="../../dict/images/note/ap/ap5.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>泰特英國美術館，伦敦</p>
+                    <p><span style="font-size: 10px;">Tate Britain</span></p>
+
+                    <div style="height: 30px;"></div> 
+                    <img src="../../dict/images/note/ap/ap6.jpg" alt="Process of Stacking">
+                    <div style="height: 10px;"></div>
+                    <p>苏格兰国立博物馆，爱丁堡</p>
+                    <p><span style="font-size: 10px;">National Museum of Scotland</span></p>
+
+                </div>
             </div>
-            <div class="btn kaggle" onclick="handleButtonClick('kaggle')">
-                <h3>建筑摄影<br>Architecture</h3>
-            </div>                
-        </div>
-    </div>
-    
-    <div class="right_container">
-        <!-- Detailed information of the first category -->
-        <div class="right_present_professional content">
-            <div class="card">
-               
-            </div>
         </div>
 
-        <!-- Detailed information of the second category -->
-        <div class="right_present_research content">
-           
-        </div>
+        <script>            
+            function handleButtonClick(category) {
+                // 根据类别更改内容显示
+                showContent(category);
 
-        <!-- Detailed information of the third category -->
-        <div class="right_present_inschool content">
-            
-        </div>
+                // 定义不同类别对应的背景图像URL
+                var backgroundImageUrl = '';
+                switch(category) {
+                    case 'professional':
+                        backgroundImageUrl = '../../dict/images/gm_cover.jpg';
+                        break;
+                    case 'research':
+                        backgroundImageUrl = '../../dict/images/gm_cover2.jpg';
+                        break;
+                    case 'inschool':
+                        backgroundImageUrl = '../../dict/images/gm_cover3.jpg';
+                        break;
+                    case 'kaggle': 
+                        backgroundImageUrl = '../../dict/images/gm_cover4.jpg';
+                        break;
+                }
 
-        <!-- Detailed information of the third category -->
-        <div class="right_present_kaggle content">
-            
-        </div>
-    </div>
-
-    <script>            
-        // Initialize with 'Professional' content displayed
-        showContent('professional');
-
-        // 函数用于根据点击的按钮更改背景图像
-        function changeBackgroundImage(backgroundImage) {
-            document.body.style.backgroundImage = `url('${backgroundImage}')`;
-        }
-
-        function handleButtonClick(category) {
-            // 根据类别更改内容显示
-            showContent(category);
-
-            // 定义不同类别对应的背景图像URL
-            var backgroundImageUrl = '';
-            switch(category) {
-                case 'professional':
-                    backgroundImageUrl = '../../dict/images/gm_cover.jpg';
-                    break;
-                case 'research':
-                    backgroundImageUrl = '../../dict/images/gm_cover2.jpg';
-                    break;
-                case 'inschool':
-                   backgroundImageUrl = '../../dict/images/gm_cover3.jpg';
-                   break;
-                  case 'kaggle':
-                  backgroundImageUrl = '../../dict/images/gm_cover4.jpg';
-                 break;
+                // 更改背景图像
+                changeBackgroundImage(backgroundImageUrl);
             }
 
-            // 更改背景图像
-            changeBackgroundImage(backgroundImageUrl);
-        }
-    </script>
-</body>
+            // Initialize with 'Professional' content displayed
+            showContent('professional');
+
+            // 函数用于根据点击的按钮更改背景图像
+            function changeBackgroundImage(backgroundImage) {
+                document.body.style.backgroundImage = `url('${backgroundImage}')`;
+            }
+        </script>
+    </body>
 </html>
